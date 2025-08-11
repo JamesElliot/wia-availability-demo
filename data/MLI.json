@@ -1,0 +1,19 @@
+{
+  "iso3": "MLI",
+  "generated_at": "2025-08-11T00:00:00Z",
+  "wia_dimensions": {
+    "services": { "completeness": 0.88 },
+    "hazard_impact": { "completeness": 0.87 },
+    "future_exposure": { "completeness": 1.00 },
+    "vulnerability": { "completeness": 0.88 },
+    "cross_cutting": { "completeness": 1.00 }
+  },
+  "datasets": [
+    { "key":"rainfall_anomaly","dimension":["hazard_impact","future_exposure"],"max_admin_level":2,"freshness_bucket":"≤90d","continuity_ratio_12m":1.0,"completeness_score":1.0 },
+    { "key":"idps","dimension":["hazard_impact"],"max_admin_level":1,"freshness_bucket":"≤90d","continuity_ratio_12m":0.92,"completeness_score":0.863 },
+    { "key":"hno_wash_pin","dimension":["services"],"max_admin_level":1,"freshness_bucket":"≤90d","continuity_ratio_12m":1.0,"completeness_score":0.88 },
+    { "key":"mpi","dimension":["vulnerability"],"max_admin_level":1,"freshness_bucket":"≤90d","continuity_ratio_12m":1.0,"completeness_score":0.88 },
+    { "key":"population_baseline","dimension":["cross_cutting"],"max_admin_level":2,"freshness_bucket":"≤90d","continuity_ratio_12m":1.0,"completeness_score":1.0 },
+    { "key":"cholera_cases","dimension":["hazard_impact"],"max_admin_level":0,"freshness_bucket":"≤90d","continuity_ratio_12m":0.97,"completeness_score":0.754 }
+  ]
+}
