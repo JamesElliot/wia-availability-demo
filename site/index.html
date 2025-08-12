@@ -1,1 +1,46 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>WIA Data Completeness (Prototype)</title><link rel="stylesheet" href="styles.css"></head><body><header><h1>WIA Data Completeness</h1><label>Country (ISO3): <input id="iso3" value="MLI" maxlength="3"></label><button id="load">Load</button></header><main id="content"><p>Pick a country and click Load.</p></main><footer><small>Sources: HDX HAPI & HDX CKAN. Demo shows data availability only.</small></footer><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WIA Data Completeness (Prototype)</title>
+    <meta name="description"
+        content="Prototype that shows data availability & completeness for WIA-relevant datasets by country." />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- Header & controls -->
+    <header class="site-header">
+        <h1>WIA Data Completeness</h1>
+
+        <form id="country-form" class="controls" onsubmit="return false;">
+            <label for="iso3">Country (ISO3):</label>
+            <input id="iso3" name="iso3" type="text" value="MLI" maxlength="3" autocapitalize="characters"
+                autocomplete="off" inputmode="latin" spellcheck="false" />
+            <button id="load" type="button">Load</button>
+        </form>
+    </header>
+
+    <!-- Main content area -->
+    <main id="content" role="main" aria-live="polite">
+        <p>Pick a country and click Load.</p>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <small>
+            Sources: HDX HAPI &amp; HDX CKAN.
+            This demo shows <em>data availability</em> only.
+        </small>
+    </footer>
+
+    <noscript>
+        Please enable JavaScript to load the availability matrix.
+    </noscript>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
