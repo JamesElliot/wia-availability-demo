@@ -9,7 +9,7 @@ async function loadCountry(iso3) {
 
     try {
         // Fetch the prebuilt JSON for this country from /site/data/
-        const res = await fetch(`./data/${iso3.toUpperCase()}.json`);
+        const res = await fetch(`../data/${iso3.toUpperCase()}.json`);
         if (!res.ok) {
             throw new Error(`No JSON found for ${code}`);
         }
